@@ -1,119 +1,169 @@
-#### 민없민 팀을 소개합니다
+# Mamago Project
 
-> '민없민 팀이란?'
+> 배포 주소: http://ec2-3-129-217-136.us-east-2.compute.amazonaws.com/ 
 >
-> ```
-> 민석이란 친구를 중심으로 팀을 짜게 되었는데,
-> 취업으로 인해 싸피를 떠나게 되어 같이할 수 없게 되었습니다.
-> 그래서 '민석 없는 민석팀'이라는 의미를 담고 있습니다.
-> ```
 
-1. 팀원 :grin: 
 
-   ![image-20200921121329085](README.assets/image-20200921121329085.png)
 
-2. 서비스 소개 :computer: (배포: http://j3b103.p.ssafy.io/)
+<br/>
 
-   - 서비스명: 마마고 :baby_chick: 
+<br/>
 
-   - 개요(목표)
+<br/>
 
-     - 간단하게 통역을 이용해보세요!
 
-     - 코로나로 인해 만나서 통역하기 두려우시죠?
 
-       언택트시대에 걸맞게 화상통역을 도와주시고 '알'을 받아 가세요! :egg: 
+Table of Contents
+-----------------
 
-       `알` 이란? 마마고 서비스에서 통용되는 화폐단위입니다. (1알 = 1이더리움)
+[1. 역할 및 기술](#1-역할-및-기술)
 
-     - 해외여행 중 긴급하게 통역을 해야할 일이 있는데 통역가를 구하기 힘드셨죠?
-     
-        마마고를 사용해 손쉽게 통역가를 구해보세요.
-     
-     - 통역가의 실력과 신뢰도를 측정하기 힘드셨죠?
-     
-       블록체인을 이용해 내역과 경력을 증명해주는 저희 서비스를 한번 이용해보세요! :)
+​    [주요 역할](#주요-역할)
 
-3. 개발 환경 :page_with_curl:  
+​    [기술스택](#기술스택)
 
-   > **1. 이미 로컬에 환경구축되어있다면 설치할 필요가 없습니다.**
-   >
-   > **2. Front, Back 다 npm을 사용, git pull 이후 npm i를 통해 패키지 업데이트를 해주세요.**
+​    [시스템 구조도](#시스템-구조도)
 
-   **frontend**
+[2. Mamago?](#2-Mamago)
 
-   - Vue.js
-   - Scss
-   - TypeScript
-   - Vuetify
+[3. Mamago 주요기능](#3-Mamago-주요기능)
 
-   ```bash
-   npm i typescript vuex router sass-loader node-sass
-   vue add vue-router vuex @vue/typescript
-   ```
 
-   **backend**
 
-   - express
-   - mongoDB
+<br/>
 
-   ```bash
-   npm init
-   npm i --save express typescript ts-node cors body-parser
-   npm i mongodb
-   npm i mongoose
-   
-   npm i @types/node @types/express nodemon
-   npm i @types/mongodb
-   npm i @types/mongoose
-   ```
+<br/>
 
-   
+<br/>
 
-   **+**
+## 1. 역할 및 기술
 
-   - Docker
-   - solidity
-   - geth
-   - web3.js
-   - socketio - webrtc
-   - Jenkins
 
-   
 
-   ### 기술스택
+### 주요 역할
 
-   ![image-20200924223815122](README.assets/image-20200924223815122.png)
+Backend & Tech Leader - Backend 서버 개발, CI/CD 구축, AWS서버 및 서비스 관리
 
-4. git 충돌해결
 
-   ```bash
-   1. 내가 작업하고 있는 브랜치의 상위 브랜치(기본 브랜치)로 간다.
-   $ git checkout develop
-   
-   2. 최신 작업파일들로 패치해준다.
-   $ git pull origin develop
-   
-   3. 충돌이 났던 가지로 간다.
-   $ git checkout [브랜치명]
-   
-   4. 머지를 해서 충돌이 난 부분을 고쳐준다.
-   $ git merge develop
-   
-   그리고 나서 다시 git add, commit, push, pull request를 하면 해결
-   
-   해결을 다해서 pull request를 하기 전에 다른 사람이 올린게 새로 업데이트되서 master가 변경된다면 다시 충돌
-   ```
 
-5. 개발일정
+### 기술스택
 
-   ![image-20200924230052301](README.assets/image-20200924230052301.png)
 
-6. Browser Support
 
-   <hr>
+- **Frontend**: Vue.js, TypeScript, SCSS
+- **Backend**: Node.js, Express.js, TypeScript, mongoDB, PM2
+- **Chat Front & Server**: Vue, JavaScript, socker.io, redis, Docker
+- **Geth Server**: Go Ethereum, Web3.js, Solidity, Remix IDE, Docker
+- **CI/CD**: Gitlab, Jenkins
+- **Tools**: AWS, Jira, Mattermost, Slack, sonaQube
 
-   
+
+
+### 시스템 구조도
+
+![마마고 아키텍쳐](README.assets/마마고 아키텍쳐.jpg)
+
+
+
+<br/>
+
+<br/>
+
+<br/>
+
+## 2. Mamago?
+
+<br/>
+
+#### 간단하게 통역을 이용해보세요!
+
+- ##### 코로나로 인해 만나서 통역하기 두려우시죠?
+
+  언택트시대에 걸맞게 화상통역을 도와주시고 '알'을 받아 가세요! :egg: 
+
+  `알` 이란? 마마고 서비스에서 통용되는 화폐단위입니다.
+
+- ##### 해외여행 중 긴급하게 통역을 해야할 일이 있는데 통역가를 구하기 힘드셨죠?
+
+  마마고를 사용해 손쉽게 통역가를 구해보세요.
+
+- ##### 통역가의 실력과 신뢰도를 측정하기 힘드셨죠?
+
+  블록체인을 이용해 내역과 경력을 증명해주는 저희 서비스를 한번 이용해보세요! :)
+
+<br/>
+
+<br/>
+
+<br/>
+
+## 3. Mamago 주요기능
+
+<br/>
+
+### 이더리움 지갑생성
+
+> 회원가입시 기존의 지갑을 사용하거나 이더리움 지갑을 생성할 수 있습니다. 
+
+
+
+<br/>
+
+<br/>
+
+<br/>
+
+### 통역사 등록하기
+
+> 통역사로 등록해야만 통역에 참여할 수 있습니다. 통역사로 등록하려면 경력정보를 입력해야 합니다.
+
+
+
+<br/>
+
+<br/>
+
+<br/>
+
+### 통역 요청하기 - 계약정보 블록체인 저장
+
+> 시간, 요청사항, 금액 등을 입력하여 통역을 요청할 수 있습니다. 통역사는 해당 요청에 지원할 수 있으며, 채택된 통역사와 통역을 진행합니다.
+>
+> 통역사를 채택하게 될 시 계약 정보가 블록체인에 저장됩니다. 해당 계약정보를 이행하였는지 여부를 확인하여 송금 또는 취소를 진행합니다.
+
+<br/>
+
+<br/>
+
+<br/>
+
+### 화상채팅
+
+> 화상채팅을 통해 통역을 진행할 수 있습니다.
+
+
+
+<br/>
+
+<br/>
+
+<br/>
+
+### 평가 및 송금하기 - 평가 및 송금 내역 블록체인 저장
+
+> 통역사에 대한 평가와 송금을 진행합니다. 평가와 송금 내역은 블록체인에 저장됩니다.
+
+
+
+<br/>
+
+<br/>
+
+<br/>
+
+
+## Browser Support
+
 
 ![KakaoTalk_20201008_030339018](README.assets/KakaoTalk_20201008_030339018.png)
 
