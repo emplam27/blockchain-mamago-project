@@ -457,6 +457,28 @@ $ docker exec 컨테이너_id cat /var/jenkins_home/secrets/initialAdminPassword
 
 
 
+#### 소스코드
+
+![캡처3](README.assets/캡처3.PNG)
+
+
+
+#### 빌드 API
+
+![캡처4](README.assets/캡처4.PNG)
+
+
+
+#### 빌드 명령어
+
+![캡처2](README.assets/캡처2.PNG)
+
+
+
+
+
+
+
 
 
 ## 8. Socket.io & Redis 서버 Docker Compose로 구동

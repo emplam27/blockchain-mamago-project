@@ -1,0 +1,30 @@
+pragma solidity >0.4.10;
+
+import "./Ownable.sol";
+
+contract  Select is Ownable {
+    
+
+    struct transRecord {
+        
+        address selectPerson;
+        address selectedPerson; // selected person accounts address
+        string article;
+        string selectedArticle; //id 
+        uint256 point; // egg reward
+        
+
+    }
+    
+    transRecord[] transRecords;
+    
+    
+    function RewardLogic(address _selectPerson ,address _selectedPerson ,  string memory _article,  string memory _selectedArticle , uint256 _point) payable public onlyOwner {
+
+        transRecords.push(transRecord(_selectPerson,_selectedPerson, _article,_selectedArticle,_point));
+        
+    }
+    
+
+    
+}
