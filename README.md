@@ -44,10 +44,6 @@ Table of Contents
 
 ​    [- 통역사 경력 정보 페이지](#통역사-경력-정보-페이지)
 
-
-
-
-
 <br/>
 
 <br/>
@@ -77,7 +73,7 @@ Backend & Tech Leader - Backend 개발, Jenkins CI/CD 구축,AWS서버 및  Dock
 
 ### 시스템 구조도
 
-![마마고 아키텍쳐](README.assets/마마고 아키텍쳐.jpg)
+![마마고 아키텍쳐](https://user-images.githubusercontent.com/60080670/95680391-53382600-0c14-11eb-868d-060549e4fa8a.jpg)
 
 
 
@@ -151,9 +147,13 @@ Backend & Tech Leader - Backend 개발, Jenkins CI/CD 구축,AWS서버 및  Dock
 >
 > 통역사를 채택하게 될 시 계약 정보가 블록체인에 저장됩니다. 해당 계약정보를 이행하였는지 여부를 확인하여 송금 또는 취소를 진행합니다.
 
+#### 통역 요청 목록 조회
+
+![image-20200924230829868](https://user-images.githubusercontent.com/60080670/95680405-6519c900-0c14-11eb-840e-a465757a6591.png)
+
 #### 통역 요청
 
-![디테일 페이지](https://user-images.githubusercontent.com/60080670/95680098-f9cef780-0c11-11eb-8322-215ab3f4cb38.PNG)
+![image-20200924230846408](https://user-images.githubusercontent.com/60080670/95680433-9b574880-0c14-11eb-9b8e-3a0c90f4afef.png)
 
 #### 통역사 지원 및 채택
 
@@ -221,5 +221,5 @@ Backend & Tech Leader - Backend 개발, Jenkins CI/CD 구축,AWS서버 및  Dock
 ## Browser Support
 
 
-![KakaoTalk_20201008_030339018](README.assets/KakaoTalk_20201008_030339018.png)
+![KakaoTalk_20201008_030339018](https://user-images.githubusercontent.com/60080670/95680436-aa3dfb00-0c14-11eb-909d-9537c98c0db1.png)
 
