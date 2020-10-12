@@ -5,7 +5,7 @@
 
 <br/>
 
-![logo](../logo.png)
+![logo](https://user-images.githubusercontent.com/60080670/95750372-01f16a80-0cd8-11eb-8b21-c2649b8dda47.png)
 
 <br/>
 
