@@ -1,7 +1,5 @@
 # Mamago Project
 
-> 배포 주소: https://j3b103.p.ssafy.io/home
-
 <br/>
 
 ![logo](https://user-images.githubusercontent.com/60080670/95750372-01f16a80-0cd8-11eb-8b21-c2649b8dda47.png)
